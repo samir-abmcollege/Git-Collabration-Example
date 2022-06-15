@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,18 +23,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Making Changes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWE-BK-Gns">
+                                <rect key="frame" x="131" y="268" width="152" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG3-Ro-Nxs">
+                                <rect key="frame" x="173.5" y="394" width="67" height="108"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kWE-BK-Gns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="1bX-EE-fQc"/>
+                            <constraint firstItem="YG3-Ro-Nxs" firstAttribute="top" secondItem="kWE-BK-Gns" secondAttribute="bottom" constant="105.5" id="1dR-yJ-X6K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWE-BK-Gns" secondAttribute="trailing" constant="131" id="XWH-3m-9ZD"/>
+                            <constraint firstItem="YG3-Ro-Nxs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eKx-UD-i0G"/>
+                            <constraint firstItem="YG3-Ro-Nxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="epR-r2-UYC"/>
                             <constraint firstItem="aWD-dK-fwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ns0-ab-IrG"/>
+                            <constraint firstItem="kWE-BK-Gns" firstAttribute="top" secondItem="aWD-dK-fwF" secondAttribute="bottom" constant="125" id="uHB-sa-1Sd"/>
                             <constraint firstItem="aWD-dK-fwF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="wR5-On-XdB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clickDisplay" destination="YG3-Ro-Nxs" id="KFH-WJ-qc5"/>
+                        <outlet property="commentService" destination="kWE-BK-Gns" id="Ddq-mZ-DFp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="89"/>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

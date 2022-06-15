@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clickDisplay: UIButton!
+    @IBOutlet weak var commentService: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
