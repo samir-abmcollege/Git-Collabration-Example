@@ -11,7 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: nil),
+            UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: nil)
+        ]
     }
 
 
