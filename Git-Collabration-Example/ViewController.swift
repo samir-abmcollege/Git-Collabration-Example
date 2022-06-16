@@ -13,34 +13,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 	title = "Collaboration"
-        // Do any additional setup after loading the view.
 
-	//this is for abm04 nvigation and safari test
-    }
-
-override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         print("viewWillAppear")
-    }
-    
+    }   
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("s viewDidAppear")
-    }
-    
+        print("viewDidAppear")
+    } 
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+        super.viewWillAppear(animated) 
         print("viewWillDisappear")
     }
-    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         print("viewDidDisappear")
     }	
-
-
 }
 
