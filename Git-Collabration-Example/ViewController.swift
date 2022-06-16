@@ -28,8 +28,6 @@ class ViewController: UIViewController {
         let pickerVC = PHPickerViewController(configuration: config)
         pickerVC.delegate = self
         self.present(pickerVC, animated: true, completion: nil)
-        
-        
     }
 }
 
@@ -42,23 +40,19 @@ extension ViewController: PHPickerViewControllerDelegate {
         }
         
         if provider.canLoadObject(ofClass: UIImage.self) {
-            provider.loadObject(ofClass: UIImage.self) { [weak self] maybeImage, maybeError in
-                guard let image = maybeImage as? UIImage,
-                      maybeError == nil,
-                      let imageData = image.pngData() else {
-                    print("ERROR: \(String(describing: maybeError))")
+            provider.loadObject(ofClass: UIImage.self) { [weak self] maybeImage,_  in
+                guard let image = maybeImage as? UIImage else {
                     return
                 }
-            
+                
                 DispatchQueue.main.async {
-                let pushImage = ImageVC()
-                pushImage.getImage = image
-                guard let vc = self?.storyboard?.instantiateViewController(identifier: "showImage") as? ImageVC else {
-                    return
-            }
-                self?.navigationController?.pushViewController(vc, animated: true)
+                    guard let showImage = self?.storyboard?.instantiateViewController(identifier: "showImage") as? ImageVC else {
+                        return
+                    }
+                    showImage.getImage = image
+                    self?.navigationController?.pushViewController(showImage, animated: true)
                 }
+            }
         }
-    }
     }
 }
