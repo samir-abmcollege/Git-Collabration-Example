@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iEr-aw-bv0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git Hub Collabration Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-dK-fwF">
-                                <rect key="frame" x="55.5" y="114" width="303" height="29"/>
+                                <rect key="frame" x="55.5" y="158" width="303" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABM-03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-i0-TY1">
-                                <rect key="frame" x="0.0" y="193" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="237" width="414" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,10 +40,58 @@
                             <constraint firstItem="aWD-dK-fwF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="wR5-On-XdB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="T9r-Rv-qNd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="89"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
+        </scene>
+        <!--ImageVC-->
+        <scene sceneID="teA-Pi-1wf">
+            <objects>
+                <viewController storyboardIdentifier="showImage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dlN-Ct-ScG" customClass="ImageVC" customModule="Git_Collabration_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wz8-La-4Uc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GJh-aa-Mww">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uYj-3M-8EB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uYj-3M-8EB" firstAttribute="bottom" secondItem="GJh-aa-Mww" secondAttribute="bottom" id="U7p-PQ-l3t"/>
+                            <constraint firstItem="GJh-aa-Mww" firstAttribute="leading" secondItem="uYj-3M-8EB" secondAttribute="leading" id="fGy-3B-Zy6"/>
+                            <constraint firstItem="uYj-3M-8EB" firstAttribute="trailing" secondItem="GJh-aa-Mww" secondAttribute="trailing" id="nuw-RR-svV"/>
+                            <constraint firstItem="GJh-aa-Mww" firstAttribute="top" secondItem="uYj-3M-8EB" secondAttribute="top" id="qsd-fC-3PO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showImage" destination="GJh-aa-Mww" id="evd-2k-16K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fk-QG-e3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ao6-sl-A8R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iEr-aw-bv0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Kh-Er-Ce1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LKj-Hv-5H8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLy-Jd-cNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
