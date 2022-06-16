@@ -14,8 +14,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
     }
-
+    
+    
+    @IBAction func showPage(_ sender: UIButton, forEvent event: UIEvent) {
+        let currentLabel = commentService.text
+        if (currentLabel == "You just click a button. ") {
+            commentService.text = "You click the button again"
+        }
+        else
+        {
+            commentService.text = "You just click a button"
+        }
+        
+        commentService.sizeToFit()
+    }
+    
+    
 
 }
 
