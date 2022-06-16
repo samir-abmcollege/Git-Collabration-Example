@@ -17,6 +17,5 @@ class ImageVC: UIViewController {
         super.viewDidLoad()
 
         showImage.image = getImage
-//        showImage.image = UIImage(systemName: "star.fill")
     }
 }
