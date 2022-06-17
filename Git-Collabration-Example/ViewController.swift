@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 	title = "Collaboration"
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
