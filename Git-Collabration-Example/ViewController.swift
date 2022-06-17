@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PhotosUI
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,4 @@ class ViewController: UIViewController {
         
         imageView.image = UIImage(named: "work")
     }
-
-
 }
-
