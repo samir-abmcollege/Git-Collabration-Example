@@ -6,8 +6,11 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import SafariServices
+=======
 import PhotosUI
+>>>>>>> master
 
 class ViewController: UIViewController {
 
@@ -15,9 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
 	title = "Collaboration"
-        
-        imageView.image = UIImage(named: "work")
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -36,4 +38,9 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("viewDidDisappear")
     }	
+=======
+        
+        imageView.image = UIImage(named: "work")
+    }
+>>>>>>> master
 }
