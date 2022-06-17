@@ -15,9 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
     }
-    
     
     @IBAction func showPage(_ sender: UIButton, forEvent event: UIEvent) {
         let currentLabel = commentService.text
@@ -32,7 +30,4 @@ class ViewController: UIViewController {
         commentService.sizeToFit()
     }
     
-    
-
 }
-
