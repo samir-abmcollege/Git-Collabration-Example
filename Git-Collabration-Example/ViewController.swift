@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
     }
     
     @IBAction func showPage(_ sender: UIButton, forEvent event: UIEvent) {
@@ -29,5 +28,4 @@ class ViewController: UIViewController {
         
         commentService.sizeToFit()
     }
-    
 }
