@@ -28,6 +28,13 @@
                                     <constraint firstAttribute="height" constant="350" id="WKw-nO-JNt"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G6-lm-1Cs">
+                                <rect key="frame" x="184" y="432" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapImageUpload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xnE-az-0TK"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k6-aJ-1Bn">
                                 <rect key="frame" x="186" y="197" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -39,17 +46,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nAc-p1-BI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Xf-HX-QIP"/>
+                            <constraint firstItem="3G6-lm-1Cs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgL-f2-yYr"/>
                             <constraint firstItem="0k6-aJ-1Bn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jp0-50-rOy"/>
                             <constraint firstItem="0k6-aJ-1Bn" firstAttribute="top" secondItem="aWD-dK-fwF" secondAttribute="bottom" constant="10" id="a3l-wn-Gf6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nAc-p1-BI8" secondAttribute="trailing" constant="20" id="erE-rt-q2f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nAc-p1-BI8" secondAttribute="bottom" constant="20" id="lj2-5F-gAU"/>
                             <constraint firstItem="aWD-dK-fwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ns0-ab-IrG"/>
                             <constraint firstItem="aWD-dK-fwF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="wR5-On-XdB"/>
+                            <constraint firstItem="nAc-p1-BI8" firstAttribute="top" secondItem="3G6-lm-1Cs" secondAttribute="bottom" constant="30" id="y1V-PY-whm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T9r-Rv-qNd"/>
                     <connections>
                         <outlet property="imageView" destination="nAc-p1-BI8" id="GqI-He-keG"/>
+                        <outlet property="uploadImageButton" destination="3G6-lm-1Cs" id="0h4-5y-7vg"/>
                         <outlet property="subtitleLabel" destination="0k6-aJ-1Bn" id="T3a-2W-kA1"/>
                     </connections>
                 </viewController>
