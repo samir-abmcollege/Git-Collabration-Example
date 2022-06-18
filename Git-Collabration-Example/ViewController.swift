@@ -12,6 +12,7 @@ import PhotosUI
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var uploadImageButton: UIButton!
     @IBOutlet weak var subtitleLabel: UILabel!
     
     override func viewDidLoad() {
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
 	title = "Collaboration"
         
         imageView.image = UIImage(named: "work")
+        uploadImageButton.setTitle("Upload Image", for: .normal)
         subtitleLabel.text = "This is sub title"
     }
 
@@ -38,4 +40,9 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("viewDidDisappear")
     }	
+    
+    @IBAction func didTapImageUpload(_ sender: UIButton) {
+        print("Image upload button tapped")
+    }
+    
 }
